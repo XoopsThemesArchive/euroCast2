@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_themecss}>" />
+<!--<link rel="stylesheet" type="text/css" media="screen" href="style.css" />-->
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+</head><{$xoops_module_header}>
+<body>
+<div align="center" id="pageContainer">
+  <div id="mainContainer">
+    <div id="headerLogo">
+        <div id="navbarMenu">
+            <div class="leftImg"><img src="<{$xoops_imageurl}>images/topmenu_points.gif" /></div>
+            <div class="links">
+                <a href="<{$xoops_url}>/modules/news">News</a> 
+                <a href="<{$xoops_url}>/modules/events">Event Calendar</a> 
+                <a href="<{$xoops_url}>/modules/liaise">Contact Us</a> 
+                <a href="<{$xoops_url}>/modules/soapbox">Columns</a>
+                <a href="<{$xoops_url}>/modules/wfdownloads">Downloads</a> 
+                <a href="<{$xoops_url}>/modules/newbb">Forums</a> 
+                <a href="<{$xoops_url}>/modules/referencer">Partners</a>
+            </div>
+            <div class="rightImg"><img src="<{$xoops_imageurl}>images/topmenu_right.gif" /></div>
+        </div>
+    </div>
+    
+    <div id="contentContainer">
+      <div id="leftContent">
+     
+        <!-- Start left blocks loop -->
+        <{foreach item=block from=$xoops_lblocks}>
+            <div id="lblock">
+              <div class="blockTitle"><{$block.title}></div>
+              <div class="blockContent"><{$block.content}></div>
+              <div class="blockFooter">&nbsp;</div>
+            </div>
+        <{/foreach}>
+        <!-- End left blocks loop -->
+      </div>      
+      <div id="centerContentAll">
+        <!-- Start center-center blocks loop -->
+        <{if $xoops_showrblock==1 OR $xoops_showcblock == 1}>
+            <div id="centerBlocks">
+                <div id="ccblock">
+                    <{foreach item=block from=$xoops_ccblocks}>
+                      <div class="centerBlockTitleLeft">&nbsp;</div>
+                      <div class="centerBlockTitle"><{$block.title}></div>
+                      <div class="centerBlockTitleRight">&nbsp;</div>
+                      <div class="centerBlockContent"><{$block.content}></div>
+                      <div class="centerBlockFooterLeft">&nbsp;</div>
+                      <div class="centerCenterBlockFooter">&nbsp;</div>
+                    <{/foreach}>
+                </div>
+                <!-- End center-center blocks loop -->
+                <!-- Start center-left blocks loop -->
+                <div id="clblock">
+                    <{foreach item=block from=$xoops_clblocks}>
+                    
+                      <div class="blockTitle"><{$block.title}></div>
+                      <div class="centerBlockContent"><{$block.content}></div>
+                      <div class="centerBlockFooterLeft">&nbsp;</div>
+                      <div class="centerLeftBlockFooter">&nbsp;</div>
+                    
+                    <{/foreach}>
+                </div>
+                <!-- End center-left blocks loop -->
+                <!-- Start center-right blocks loop -->
+                <div id="crblock">
+                    <{foreach item=block from=$xoops_crblocks}>
+                    
+                      <div class="blockTitle"><{$block.title}></div>
+                      <div class="blockContent"><{$block.content}></div>
+                      <div class="blockFooter">&nbsp;</div>
+                    <{/foreach}>
+                </div>
+            </div>
+        <{/if}>
+        <!-- End center-right blocks loop -->
+        <!-- End display center blocks -->
+        <{if $xoops_showrblock == 1}>
+          <div id="rightContent">      
+          <!-- Start right blocks loop -->
+            <{foreach item=block from=$xoops_rblocks}>
+                <div class="rblock">
+                  <div class="blockTitle"><{$block.title}></div>
+                  <div class="blockContent"><{$block.content}></div>
+                  <div class="blockFooter">&nbsp;</div>
+                </div>
+            <{/foreach}>
+            <!-- End right blocks loop -->
+          </div>
+        <{/if}>
+        <!-- Start module content block -->
+        <div class="centerBlockTitleLeft">&nbsp;</div>
+        <div class="centerBlockTitle"><{$xoops_pagetitle}></div>
+        <div class="centerPageTitleRight">&nbsp;</div>
+        <div class="moduleContent"><{$xoops_contents}></div>
+        <!-- End module content block -->
+    </div>
+    <!--<div id="Footer"><{$xoops_footer}></div>-->
+  </div>
+</div>
+</body>
+</html>

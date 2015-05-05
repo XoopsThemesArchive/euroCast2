@@ -1,0 +1,139 @@
+@import url(style.css); 
+
+body {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-size: small;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-color: #efefef;
+}
+table {
+    width: 100%;
+}
+ul {
+    padding-left: 15px;
+    padding-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+li {
+    padding-left : 2px;
+    padding-right: 0px;
+}
+
+a:link		{color: #000000; font-size: 12px; font-weight: bold; text-decoration: none}
+a:visited	{color: #000000; font-size: 12px; font-weight: bold; text-decoration: none}
+a:active	{color: #000000; font-size: 12px; font-weight: bold; text-decoration: none}
+a:hover		{color: #0F4686; font-size: 12px; font-weight: bold; text-decoration: none}
+
+#pageContainer {
+}
+
+#mainContainer {
+    width: 1000px;
+	background-color: #efefef;
+	text-align: left;
+}
+
+#contentContainer #leftContent {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+	width: 202px;
+}
+
+#contentContainer #centerContent {
+    margin-left: 210px;
+    margin-right: 210px;
+}
+
+#contentContainer #centerContentAll {
+    position: absolute;
+    left: 210px;
+    top: 0px;
+    border-right: 1px solid black;
+    clear: both;
+    width: 790px;
+}
+
+div#centerBlocksAll {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+div#centerBlocks {
+    float: left;
+    width: 580px;
+}
+
+div#ccblock {
+    float: left;
+    width: 570px;
+    padding-bottom: 3px;
+    padding-top: 0px;
+	padding-right: 10px;
+}
+
+div#clblock {
+    float: left;
+    width: 360px;;
+    padding-bottom: 3px;
+    padding-top: 0px;
+}
+div#crblock {
+    float: right;
+    width: 202px;
+    padding-bottom: 3px;
+    padding-top: 0px;
+    padding-right: 10px;
+}
+div.centerBlockFooterLeft {
+    clear: both;
+    float: left;
+    height: 18px;
+    width: 18px;
+    background-image: url('images/block_footerleft.gif');
+}
+
+div.centerCenterBlockFooter {
+    width: 551px;
+}
+div.centerLeftBlockFooter {
+    width: 341px;
+}
+.moduleContent {
+    clear: both;
+    float: left;
+}
+#contentContainer #rightContent {
+    float: right;
+	width: 202px;
+	margin-right: 5px;
+}
+
+.item {border: none;}
+.itemHead {padding: 3px; background-color: #0F4686; color: #FFFFFF;}
+.itemInfo {padding: 3px; background-color: #efefef; text-align: right;}
+.itemInfo a:hover {color: #0F4686;}
+.itemTitle a {font-size: 130%; font-weight: bold; font-variant: small-caps; color: #ffffff; background-color: transparent;}
+.itemPoster {font-size: 90%; font-style:italic;}
+.itemPostDate {font-size: 90%; font-style:italic;}
+.itemStats {font-size: 90%; font-style:italic;}
+.itemBody {padding-left: 5px;}
+.itemText {margin-top: 5px; margin-bottom: 5px; line-height: 1.5em;}
+.itemText:first-letter {font-size: 133%; font-weight: bold;}
+.itemFoot {padding: 3px; background-color: #efefef; text-align: right;}
+.itemAdminLink {font-size: 90%;}
+.itemPermaLink {font-size: 90%;}
+
+th {background-color: #0F4686; color: #FFFFFF; padding : 2px; vertical-align : middle; font-family: Verdana, Arial, Helvetica, sans-serif;}
+th a {
+    color: silver;
+}
+.head a {color: silver;}
+.head a:hover {color: #FFFFFF;}
